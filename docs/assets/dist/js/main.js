@@ -6,7 +6,7 @@ function feedback(action, status) {
     //Aram ID
     //use this for production
     let chat_id = "1329475336";
-    let user_phone = prompt('Введите телефон для контакта с вами');
+    let user_phone = prompt('Введите discord для контакта с вами');
     var msg = `${action} от ${user_phone}`;// from ${getCookie("@")}`;
     var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${msg}&parse_mode=html`;
   
@@ -16,7 +16,7 @@ function feedback(action, status) {
           return response.json();
         })
         .then((data) => {
-          alert(`Благодарим за  заказ «${action}».\nСейчас ответственный свяжется с вами`)
+          alert(`Благодарим за обращение «${action}».\nСейчас ответственный свяжется с вами`)
           window.location.href = "/#menu";
         });
     }
