@@ -1,11 +1,11 @@
 function feedback(action, status) {
     //
-    let token = "5430048154:AAEFptLp8IdbKirOYJzzM3ekyTd2ibVLMNc";/* :TODO NOTSECURITY REWERITE */
+    let token = "7043261922:AAG-ImKOB9k6P6Gv8sV7Ge94_IBVIgiwXRw";/* :TODO NOTSECURITY REWERITE */
     //use this for testing
    //let chat_id = "190404167";
-    //let chat_id = "1329475336";//Aram ID
+    //Aram ID
     //use this for production
-    let chat_id = "-915348868";
+    let chat_id = "1329475336";
     let user_phone = prompt('Введите телефон для контакта с вами');
     var msg = `${action} от ${user_phone}`;// from ${getCookie("@")}`;
     var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${msg}&parse_mode=html`;
